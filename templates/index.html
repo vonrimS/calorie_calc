@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!--    <link rel="stylesheet" href="../static/css/main.css">-->
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/main.css') }}">
+    <title>Calories</title>
+</head>
+<body>    
+    <div class="container">
+        <div class="header">calories.calc</div>
+        <div class="container__main">
+            <div class="pic"></div>
+            <div class="intro">
+                <p>The toughest part of a DIET isn't watching what you eat. It's watching what other people eat.</p>
+                <a href="{{url_for('calories_form_page')}}">
+                    <div>
+                        Calculate
+                    </div>
+                </a>
+            </div>
+           
+        </div>
+        <div class="footer">Copyright &copy; 2022 Michael von rimS - All Rights Reserved.</div>
+    </div>
+
+</body>
+</html>
